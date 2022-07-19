@@ -1,0 +1,52 @@
+{
+    "name": "usmonovdoston/custom-gii",
+    "description": "The Gii extension for the Yii framework",
+    "keywords": ["yii2", "gii", "code generator"],
+    "type": "yii2-extension",
+    "license": "BSD-3-Clause",
+    "support": {
+        "issues": "https://github.com/usmonovdoston/custom-gii/issues",
+        "forum": "http://www.yiiframework.com/forum/",
+        "wiki": "http://www.yiiframework.com/wiki/",
+        "irc": "irc://irc.freenode.net/yii",
+        "source": "https://github.com/usmonovdoston/custom-gii"
+    },
+    "authors": [
+        {
+            "name": "Doston Usmonov",
+            "email": "doston5552@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "yiisoft/yii2": "~2.0.14",
+        "yiisoft/yii2-bootstrap": "~2.0.0",
+        "phpspec/php-diff": ">=1.0.2",
+        "bower-asset/typeahead.js": "0.10.* | ~0.11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "usmonovdoston\\customGii\\": "src"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.0.x-dev"
+        }
+    },
+    "config": {
+        "process-timeout": 1800,
+        "fxp-asset": {
+            "enabled": false
+        },
+        "allow-plugins": {
+            "yiisoft/yii2-composer": true
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ]
+}
