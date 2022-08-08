@@ -3,6 +3,7 @@
 }
 .modal-header button.close {
     padding: 0;
+    margin: 0!important;
     cursor: pointer;
     background: transparent;
     border: 0;
