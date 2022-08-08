@@ -28,8 +28,6 @@ $this->params['breadcrumbs'][] = $this->title;
     <?="<?php //"?> if (Yii::$app->user->can('<?= Inflector::camel2id(StringHelper::basename($generator->viewPath)) ?>/create')): ?>
     <p class="pull-right no-print">
         <?= "<?= " ?>Html::a('<span class="fa fa-plus"></span>', ['create'], ['class' => 'btn btn-sm btn-success']) ?>
-        <?= "<?= " ?>Html::a('<i class="fa fa-file-excel-o"></i>',
-            ['export-excel?type=index'], ['class' => 'btn btn-sm btn-info']) ?>
         <?= "<?= " ?>Html::button('<i class="fa fa-print print-btn"></i>',
             ['target' => '_black','class' => 'btn btn-sm btn-primary']) ?>
     </p>

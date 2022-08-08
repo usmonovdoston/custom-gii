@@ -36,6 +36,9 @@ use yii\helpers\ArrayHelper;
  */
 class <?= $className ?> extends <?= '\\' . ltrim($generator->baseClass, '\\') . "\n" ?>
 {
+    const STATUS_ACTIVE     = 1;
+    const STATUS_INACTIVE   = 2;
+    const STATUS_SAVED      = 3;
     private static $_list = null;
     /**
      * {@inheritdoc}
@@ -109,5 +112,20 @@ class <?= $className ?> extends <?= '\\' . ltrim($generator->baseClass, '\\') . 
             });
         }
         return self::$_list;
+    }
+    /**
+    * @param null $key
+    * @return array|mixed
+    */
+    public static function getStatusList($key = null){
+        $result = [
+            self::STATUS_ACTIVE   => Yii::t('app','Active'),
+            self::STATUS_INACTIVE => Yii::t('app','Deleted'),
+            self::STATUS_SAVED => Yii::t('app','Saved')
+        ];
+        if(!empty($key)){
+            return $result[$key];
+        }
+        return $result;
     }
 }

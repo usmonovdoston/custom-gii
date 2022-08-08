@@ -29,8 +29,6 @@ $this->params['breadcrumbs'][] = $this->title;
     <p class="pull-right no-print">
         <?= "<?= " ?>Html::a('<span class="fa fa-plus"></span>', ['create'],
         ['class' => 'create-dialog btn btn-sm btn-success', 'id' => 'buttonAjax']) ?>
-        <?= "<?= " ?>Html::a('<i class="fa fa-file-excel-o"></i>',
-        ['export-excel?type=index'], ['class' => 'btn btn-sm btn-info']) ?>
         <?= "<?= " ?>Html::button('<i class="fa fa-print print-btn"></i>',
         ['target' => '_black','class' => 'btn btn-sm btn-primary']) ?>
     </p>

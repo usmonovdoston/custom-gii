@@ -343,3 +343,6 @@ function loadModal(){
 $.fn.eventSubmitSuccess = function (response) {};
 $.fn.eventSubmitError = function (response) {};
 $.fn.eventCreateWindowOpen = function (response) {};
+$('body').delegate('.print-btn','click', function (e) {
+    window.print();
+});
