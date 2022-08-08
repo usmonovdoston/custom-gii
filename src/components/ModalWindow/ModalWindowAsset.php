@@ -19,6 +19,8 @@ class ModalWindowAsset extends AssetBundle
 {
     public $sourcePath = '@vendor/usmonovdoston/custom-gii/src/components/ModalWindow/assets';
     public $css = [
+        'css/modalWindow.css',
+        'css/font-awesome.min.css',
     ];
     public $js = [
         'js/pnotify.js',
