@@ -10,6 +10,8 @@
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+    position: absolute;
+    right: 10px;
 }
 .modal-header .close {
     float: right;
