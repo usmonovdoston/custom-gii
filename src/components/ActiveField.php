@@ -7,7 +7,7 @@
 
 namespace usmonovdoston\customGii\components;
 
-use yii\gii\Generator;
+use usmonovdoston\customGii\Generator;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
 

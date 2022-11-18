@@ -1,10 +1,10 @@
 <?php
 
-use yii\gii\CodeFile;
+use usmonovdoston\customGii\CodeFile;
 use yii\helpers\Html;
 
 /* @var $this \yii\web\View */
-/* @var $generator \yii\gii\Generator */
+/* @var $generator \usmonovdoston\customGii\Generator */
 /* @var $files CodeFile[] */
 /* @var $answers array */
 /* @var $id string panel ID */

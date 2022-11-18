@@ -1,6 +1,6 @@
 <?php
 /* @var $this yii\web\View */
-/* @var $generator yii\gii\Generator */
+/* @var $generator usmonovdoston\customGii\Generator */
 /* @var $results string */
 /* @var $hasError bool */
 ?>
